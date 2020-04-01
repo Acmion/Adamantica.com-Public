@@ -1,0 +1,38 @@
+﻿:root
+{
+    --spacing: 1rem;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    height: 1px;
+    font-size: 1.6rem;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main
+{
+    flex-grow: 1;
+}
+
+footer
+{
+    margin-top: 4rem;
+
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+
+}
+
+.main-content
+{
+    padding: 0 var(--spacing);
+}
