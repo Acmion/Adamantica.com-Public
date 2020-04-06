@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="03030b4a-9996-4111-83fa-29dc66776d7b"
+   data-name="Layer 1"
+   width="201.97"
+   height="248.2"
+   viewBox="0 0 201.97001 248.19999"
+   version="1.1"
+   sodipodi:docname="undraw_organize_resume_utk5.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata245">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>roganize resume</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview243"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="497.93043"
+     inkscape:cy="144.29811"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="03030b4a-9996-4111-83fa-29dc66776d7b"
+     fit-margin-left="60"
+     fit-margin-right="60" />
+  <defs
+     id="defs12">
+    <linearGradient
+       id="c172ced9-c526-43de-8081-a3b8b4d2db3a"
+       x1="534.53998"
+       y1="548.83002"
+       x2="534.53998"
+       y2="87.830002"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="gray"
+         stop-opacity="0.25"
+         id="stop2" />
+      <stop
+         offset="0.54"
+         stop-color="gray"
+         stop-opacity="0.12"
+         id="stop4" />
+      <stop
+         offset="1"
+         stop-color="gray"
+         stop-opacity="0.1"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="b55b1914-9010-4651-994a-27bfb9322cf9"
+       x1="1028.8199"
+       y1="815.40997"
+       x2="1028.8199"
+       y2="407.41"
+       xlink:href="#c172ced9-c526-43de-8081-a3b8b4d2db3a" />
+    <linearGradient
+       id="f578ae08-57d5-484c-bc58-a6933ab5fa51"
+       x1="799.21002"
+       y1="589.03003"
+       x2="799.21002"
+       y2="340.82999"
+       xlink:href="#c172ced9-c526-43de-8081-a3b8b4d2db3a"
+       gradientTransform="translate(-698.22998,-340.82999)" />
+    <linearGradient
+       id="c6440606-d3b5-4d29-adcc-566625c77aaa"
+       x1="2225.3501"
+       y1="817.54999"
+       x2="2225.3501"
+       y2="423.13"
+       gradientTransform="translate(-1556)"
+       xlink:href="#c172ced9-c526-43de-8081-a3b8b4d2db3a" />
+  </defs>
+  <title
+     id="title14">roganize resume</title>
+  <rect
+     x="0"
+     y="0"
+     width="201.97"
+     height="248.2"
+     id="rect134"
+     style="fill:#2f2e41;fill-opacity:1" />
+  <rect
+     x="3.1700439"
+     y="3.9000244"
+     width="195.63"
+     height="240.41"
+     id="rect136"
+     style="fill:#3f3d56;fill-opacity:1" />
+  <rect
+     x="16.309998"
+     y="25"
+     width="40"
+     height="40"
+     id="rect138"
+     style="fill:#e8eaf1" />
+  <rect
+     x="36.309998"
+     y="89"
+     width="142"
+     height="8"
+     id="rect140"
+     style="fill:#e8eaf1" />
+  <rect
+     x="36.309998"
+     y="106"
+     width="142"
+     height="8"
+     id="rect142"
+     style="fill:#e8eaf1" />
+  <rect
+     x="36.309998"
+     y="123"
+     width="142"
+     height="8"
+     id="rect144"
+     style="fill:#e8eaf1" />
+  <rect
+     x="36.309998"
+     y="140"
+     width="142"
+     height="8"
+     id="rect146"
+     style="fill:#e8eaf1" />
+  <rect
+     x="36.309998"
+     y="157"
+     width="142"
+     height="8"
+     id="rect148"
+     style="fill:#e8eaf1" />
+  <rect
+     x="36.309998"
+     y="174.00003"
+     width="142"
+     height="8"
+     id="rect150"
+     style="fill:#e8eaf1" />
+  <rect
+     x="36.309998"
+     y="191.00003"
+     width="142"
+     height="8"
+     id="rect152"
+     style="fill:#e8eaf1" />
+</svg>
