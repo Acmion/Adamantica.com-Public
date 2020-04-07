@@ -10,12 +10,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="114"
-   height="114"
-   viewBox="0 0 30.162501 30.162501"
+   width="142"
+   height="141.99998"
+   viewBox="0 0 37.570835 37.570831"
    version="1.1"
    id="svg1006"
-   sodipodi:docname="HyperNavIcon.svg"
+   sodipodi:docname="icon.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <defs
      id="defs1000">
@@ -50,8 +50,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="20.735674"
-     inkscape:cy="31.787303"
+     inkscape:cx="41.683634"
+     inkscape:cy="76.255217"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -70,8 +70,8 @@
     <inkscape:grid
        type="xygrid"
        id="grid1581"
-       originx="4.3459599e-07"
-       originy="-1.134596e-06" />
+       originx="3.7041669"
+       originy="3.7041679" />
   </sodipodi:namedview>
   <metadata
      id="metadata1003">
@@ -81,7 +81,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -89,7 +89,7 @@
      inkscape:label="Icon"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(2.4e-7,-266.8375)"
+     transform="translate(3.7041667,-263.13334)"
      style="display:inline">
     <circle
        style="opacity:1;fill:#69a6ff;fill-opacity:0.39607843;stroke:none;stroke-width:3.70416689;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -118,6 +118,6 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Text"
-     transform="translate(2.3459598e-7,3.908346e-4)"
+     transform="translate(3.7041667,3.7045508)"
      style="display:inline" />
 </svg>
