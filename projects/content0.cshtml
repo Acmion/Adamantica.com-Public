@@ -1,0 +1,125 @@
+﻿@using YamlDotNet.Serialization;
+@using CommunicatorCms.Core;
+@using CommunicatorCms.Core.Settings;
+@using CommunicatorCms.Core.AppFileSystem;
+@using System.Linq;
+
+@inject RequestState RequestState;
+
+@functions
+{
+    public class ProjectItem
+    {
+        private static string LogoFileName = "logo.svg";
+        private static string PropertiesFileName = "info.yaml";
+        private static IDeserializer YamlDeserializer = new DeserializerBuilder().IgnoreUnmatchedProperties().Build();
+
+        public string Title { get; set; } = "Unknown";
+        public string Description { get; set; } = "Unknown";
+        public string DateOfPublication { get; set; } = "TBA";
+
+        public string Url { get; set; } = "";
+        public string LogoUrl { get; set; } = "";
+        public string GitHubUrl { get; set; } = "";
+
+        public List<string> Tags { get; set; } = new List<string>();
+
+        public static async Task<List<ProjectItem>> GetProjectItems(List<string> order)
+        {
+            var subDirectoryAppPaths = AppDirectory.GetDirectories(AppPath.Join(GeneralSettings.WebRootPath, "/www/projects"));
+
+            var projectItems = new List<ProjectItem>(subDirectoryAppPaths.Length);
+
+            subDirectoryAppPaths = subDirectoryAppPaths.OrderBy(path => order.IndexOf(AppPath.GetFileName(path))).ToArray();
+
+            foreach (var subDirAppPath in subDirectoryAppPaths)
+            {
+                if (IsAppPathProjectItem(subDirAppPath))
+                {
+                    var projectItem = await LoadFromAppPath(subDirAppPath);
+                    projectItem.LogoUrl = AppPath.Join(AppPath.GetFileName(subDirAppPath), LogoFileName);
+                    projectItems.Add(projectItem);
+                }
+            }
+
+            return projectItems;
+        }
+
+        private static bool IsAppPathProjectItem(string appPath)
+        {
+            return AppFile.Exists(AppPath.Join(appPath, PropertiesFileName));
+        }
+        private static async Task<ProjectItem> LoadFromAppPath(string appPath)
+        {
+            var content = await AppFile.ReadAllTextAsync(AppPath.Join(appPath, PropertiesFileName));
+            return YamlDeserializer.Deserialize<ProjectItem>(content);
+        }
+    }
+}
+
+@{ 
+    var currentPage = await RequestState.GetCurrentPage();
+    var projectOrder = (List<object>)(currentPage.PropertiesExtra.ProjectOrder);
+    var projectItems = await ProjectItem.GetProjectItems(projectOrder.OfType<string>().ToList());
+}
+
+<h1>Projects</h1>
+<div class="columns is-multiline">
+    @{
+        foreach (var projectItem in projectItems)
+        {
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-content">
+
+                        <div class="content">
+                            <img src="@projectItem.LogoUrl" style="height: 4rem; align-self: flex-start;">
+
+                            <hr />
+
+                            <p style="flex-grow: 1; flex-shrink: 0;">
+                                @Html.Raw(projectItem.Description)
+                            </p>
+
+                            <div class="tags are-large">
+                                @{
+                                    foreach (var tag in projectItem.Tags)
+                                    {
+                                        <span class="tag is-warning">
+                                            @tag
+                                        </span>
+                                    }
+                                }
+                            </div>
+
+                            <p>
+                                @{
+                                    if (!string.IsNullOrWhiteSpace(projectItem.Url))
+                                    {
+                                        <a href="@projectItem.Url">Project Website</a>
+                                        <br />
+                                    }
+                                    else
+                                    {
+                                        <a></a>
+                                        <br />
+                                    }
+
+                                    if (!string.IsNullOrWhiteSpace(projectItem.GitHubUrl))
+                                    {
+                                        <a href="@projectItem.GitHubUrl">GitHub Repository</a>
+                                    }
+                                }
+                            </p>
+                            <p>
+                                
+                                Published: @projectItem.DateOfPublication
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>

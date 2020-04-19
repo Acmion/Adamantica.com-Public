@@ -1,0 +1,19 @@
+Title: HardPin
+
+Tags:
+    - VS Code
+    - JavaScript
+    - CSS
+    - Tabs
+    - MutationObserver
+
+Description: >
+    <strong>HardPin</strong> is a makeshift solution to the <a href="https://github.com/microsoft/vscode/issues/12622">much requested feature</a> 
+    to pin tabs in Visual Studio Code. HardPin is implemented without access to any of VS Code's API, but could, with relative ease, be integrated 
+    in to the actual source code.
+
+
+DateOfPublication: Apr 18, 2020
+
+Url: https://hard-pin.adamantica.com
+GitHubUrl: https://github.com/Adamantica/HardPin

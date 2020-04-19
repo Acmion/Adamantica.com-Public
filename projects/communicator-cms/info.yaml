@@ -1,0 +1,17 @@
+Title: CommunicatorCMS
+Tags:
+    - CMS
+    - Flat File
+    - "C#"
+    - Razor Syntax
+    - ASP.NET Core
+
+Description: 
+    <strong>CommunicatorCMS</strong> is a flat file website CMS built with ASP.NET Core. 
+    The CMS is built to be extendable, themeable, version controllable and to allow the 
+    mixing of serverside code and static content. The project is largely inspired by the 
+    vanilla PHP development model.
+DateOfPublication: TBA
+
+Url: ""
+GitHubUrl: https://github.com/Adamantica/CommunicatorCMS
